@@ -1,61 +1,7 @@
-// const ball = document.getElementById("ball");
-// const grid = document.querySelector(".grid");
-
-// var blocks = Array.from(document.querySelectorAll(" grid div"))
-// var ballDirectionY = 1;
-// var ballDirectionX = 1;
-
-// // moving the ball 
-// function moveBall(){
-//     var ballleft = parseInt (window.getComputedStyle(ball).getPropertyValue ("left")) ;
-//     var ballTop = parseInt (window.getComputedStyle (ball).getPropertyValue("top")) ;
-// //changing left and top
-// ball.style.left = (ballleft + (10*ballDirectionX)) + "px";
-// ball.style.top = (ballTop - (10*ballDirectionY)) + "px"
-// }
-
-// //change direction of ball on colision with walls
-// function changeDirection(){
-//     var ballleft = parseInt (window.getComputedStyle(ball).getPropertyValue ("left")) ;
-//     var ballTop = parseInt (window.getComputedStyle (ball).getPropertyValue("top")) ;
-    
-//     if(ballTop<0 || ballTop>innerHeight){
-//         ballDirectionY = -ballDirectionY
-//     }
-//     else if(ballleft < 0 || ballleft > innerWidth){
-//         ballDirectionX = - ballDirectionX
-//     }    
-// }
-
-// // Removing blocks with ball and bouncing ball back 
-// function remove(){
-//     blocks. forEach((block)=>{
-//         var blockPosition = block.getBoundingClientRec();
-//             var ballPosition = ball.getBoundingClientRect();
-//             var removedBlock = block.classList.contains("remove");
-//             if(blockPosition.left<ballPosition.right && blockPosition.right>ballPosition.left && blockPosition.top<ballPosition.bottom && blockPosition.bottom>ballPosition.bottom &&!removedBlock){
-//               block.style.visibility="hidden";
-//               block.classList.add("remove");
-//               ballDirectionY= -ballDirectionY
-//             }
-//             else{
-//                 console.log("nothing")
-//             }
-// })
-// }
-
-// // Main starting fuction of game
-// function start(){
-//     moveBall()
-//     changeDirection()
-//     remove()
-// }
-//     setInterval(start, 20)
-
 
 const ball = document.getElementById("ball");
 const grid = document.querySelector(".grid");
-var paddle = document.getElementById("paddle");
+var platform = document.getElementById("platform");
 
 var blocks = Array.from(document.querySelectorAll(".grid div")); 
 
@@ -104,15 +50,15 @@ function remove(){
 }
 
 // control the paddle with mouse
-window.addEventListener("mousemove", movePaddle)
+window.addEventListener("mousemove", movePlatform)
 
- function movePaddle(e){
+ function movePlatform(e){
      mousePosition ={
          x: e.clientX,
          y: e.clientY
      }
      if(mousePosition.x < innerWidth - 80){
-        paddle.style.left = (mousePosition.x + 0) + "px"
+        platform.style.left = (mousePosition.x + 0) + "px"
      }else{
          console.log("go inside")
      }
@@ -121,9 +67,9 @@ window.addEventListener("mousemove", movePaddle)
 
  // ball bouce back after hitting the paddle
  function collision(){
-    var paddlePosition = paddle.getBoundingClientRect();
+    var platformPosition = platform.getBoundingClientRect();
     var ballPosition = ball.getBoundingClientRect();
-    if(paddlePosition.left < ballPosition.right && paddlePosition.right > ballPosition.left && paddlePosition.top < ballPosition.bottom && paddlePosition.bottom > ballPosition.top){
+    if(platformPosition.left < ballPosition.right && platformPosition.right > ballPosition.left && platformPosition.top < ballPosition.bottom && platformPosition.bottom > ballPosition.top){
         ballDirectionY = -ballDirectionY
     }
  }
