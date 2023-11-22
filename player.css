@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Days+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: black;
+}
+
+
+/* box */
+#box{
+    border: 8px solid rgb(251, 1, 243);
+    height: 655px;
+    width: 1114px;
+    margin: 60px 0px 0px 150px;
+}
+#title{
+    font-family: 'Days One', sans-serif;
+    font-size: 65px;
+    margin: 50px 0px 0px 341px;
+    color: rgb(108 86 255);
+}
+
+
+
+/* playe's name */
+#name{
+    font-family: 'Inknut Antiqua', serif;
+    font-size: 34px;
+    color: white;
+    margin: 20px 0px 0px 58px;
+    position: absolute;
+}
+#ename{
+    margin: 80px 0px 0px 58px;
+    border: 2px solid black;
+    font-family: 'Inconsolata', monospace;
+    padding: 10px 0px 15px 10px;
+    width: 400px;
+}
+::placeholder {
+    color: black;
+    font-size: 26px;
+}
+
+
+
+/* player's nickname */
+#nname{
+    font-family: 'Inknut Antiqua', serif;
+    font-size: 34px;
+    color: white;
+    margin: 100px 0px 0px 58px;
+
+}
+#nename{
+    margin: 0px 0px 0px 58px;
+    border: 2px solid black;
+    font-family: 'Inconsolata', monospace;
+    padding: 10px 0px 15px 10px;
+    width: 400px;
+}
+::placeholder {
+    color: black;
+    font-size: 26px;
+}
+/* ball */
+#ball{
+    background-color: rgb(189 236 34);
+    height: 77px;
+    width: 86px;
+    border-radius: 100%;
+    text-align: center;
+    margin: 130px 0px 0px 550px;
+    padding: 10px 0px 0px 0px;
+    font-family: 'Inknut Antiqua', serif;
+    font-size: 24px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/* platform */
+#platform{
+    height: 24px;
+    width: 226px;
+    background-color: rgba(9, 23, 147, 1);
+    margin: 0px 0px 0px 470px;
+    position: absolute;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px){
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    body{
+        background-color: black;
+    }
+    
+    
+    /* box */
+    #box{
+        border: 8px solid rgb(251, 1, 243);
+        height: 679px;
+        width: 355px;
+        margin: 70px 0px 0px 13px;
+    }
+    #title{
+        font-family: 'Days One', sans-serif;
+        font-size: 36px;
+        margin: 20px 0px 0px 27px;
+        color: rgb(108 86 255);
+    }
+    
+    
+    
+    /* playe's name */
+    #name{
+        font-family: 'Inknut Antiqua', serif;
+        font-size: 21px;
+        color: white;
+        margin: 20px 0px 0px 10px;
+        position: absolute;
+    }
+    #ename{
+        margin: 50px 0px 0px 10px;
+        border: 2px solid black;
+        font-family: 'Inconsolata', monospace;
+        padding: 13px 0px 8px 10px;
+        width: 320px;
+    }
+    ::placeholder {
+        color: black;
+        font-size: 26px;
+    }
+    
+    
+    
+    /* player's nickname */
+    #nname{
+        font-family: 'Inknut Antiqua', serif;
+        font-size: 21px;
+        color: white;
+        margin: 100px 0px 0px 10px;
+    
+    }
+    #nename{
+        margin: 0px 0px 0px 10px;
+        border: 2px solid black;
+        font-family: 'Inconsolata', monospace;
+        padding: 13px 0px 8px 10px;
+        width: 320px;
+    }
+    ::placeholder {
+        color: black;
+        font-size: 26px;
+    }
+    /* ball */
+    #ball{
+        background-color: rgb(189 236 34);
+        height: 77px;
+        width: 86px;
+        border-radius: 100%;
+        text-align: center;
+        margin: 290px 0px 0px 150px;
+        padding: 10px 0px 0px 0px;
+        font-family: 'Inknut Antiqua', serif;
+        font-size: 24px;
+    }
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    
+    /* platform */
+    #platform{
+        height: 24px;
+        width: 226px;
+        background-color: rgba(9, 23, 147, 1);
+        margin: 0px 0px 0px 80px;
+    }
+    
+}

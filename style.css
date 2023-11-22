@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: black;
+}
+
+/* bricks */
+.brick{
+    width: 87px;
+    height: 25px;
+    background-color: rgb(212, 45, 45);
+    position: absolute;
+}
+#brick1{
+    margin: 50px;
+}
+#brick2{
+    margin-top: 368px;
+    margin-left: 33px;
+}
+#brick3{
+     margin: 195px 0px 0px 147px;
+}
+#brick4{
+    margin: 25px 0px 0px 276px;
+}
+#brick5{
+    margin: 96px 0px 0px 505px;
+}
+#brick6{
+    margin: 32px 0px 0px 779px;
+}
+#brick7{
+    margin: 121px 0px 0px 961px;
+}
+#brick8{
+    margin: 250px 0px 0px 1250px;
+}
+#brick9{
+    margin: 50px 0px 0px 1165px;
+}
+
+
+
+/* game name */
+#title{
+    font-family:'Bungee Shade', sans-serif;
+    color: rgb(108 86 255);
+    position: absolute;
+    font-size: 120px;
+    margin: 200px 0px 0px 500px;
+}
+#title2{
+    font-family:'Bungee Shade', sans-serif;
+    color: rgb(251, 1, 243);
+    position: absolute;
+    font-size: 130px;
+    margin: 350px 0px 0px 380px;
+}
+
+
+
+/* game name */
+.button{
+    margin: 600px 0px 0px 650px;
+    position: absolute;
+    height: 40px;
+    width: 230px;
+    background-color: white;
+    border-radius: 37px;
+    text-align: center;
+    padding: 19px 0px 18px 0px;
+    font-family: 'Inter', sans-serif;
+    font-size: 30px; 
+    font-weight: bolder;  
+    text-decoration: none; 
+} 
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px){
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    body{
+        background-color: black;
+    }
+    
+    /* bricks */
+    .brick{
+        width: 72px;
+        height: 25px;
+        background-color: rgb(212, 45, 45);
+        position: absolute;
+    }
+    #brick1{
+        margin: 27px 0px 0px 23px;
+    }
+    #brick2{
+        width:50px;
+        height: 25px;
+        margin-top: 199px;
+        margin-left: 0px;
+    }
+    #brick3{
+         margin: 288px 0px 0px 72px;
+    }
+    #brick4{
+        margin: 76px 0px 0px 144px;
+    }
+    #brick5{
+        margin: 27px 0px 0px 271px;
+    }
+    #brick6{
+        width: 42px;
+        margin: 135px 0px 0px 350px;
+    }
+    #brick7{
+        margin: 263px 0px 0px 303px;
+    }
+    #brick8{
+        margin: 250px 0px 0px 1250px;
+        display: none;
+    }
+    #brick9{
+        margin: 50px 0px 0px 1165px;
+        display: none;
+    }
+    
+    
+    
+    /* game name */
+    #title{
+        font-family:'Bungee Shade', sans-serif;
+        color: rgb(108 86 255);
+        font-size: 45px;
+        margin: 118px 0px 0px 118px;
+    }
+    #title2{
+        font-family:'Bungee Shade', sans-serif;
+        color: rgb(251, 1, 243);
+        font-size: 50px;
+        margin: 168px 0px 0px 70px;
+    }
+    
+    
+    
+    /* game name */
+    .button{
+        margin: 448px 0px 0px 75px;
+        position: absolute;
+        height: 50px;
+        width: 259px;
+        background-color: white;
+        border-radius: 37px;
+        text-align: center;
+        padding: 30px 0px 20px 0px;
+        font-family: 'Inter', sans-serif;
+        font-size: 30px; 
+        font-weight: bolder;  
+        text-decoration: none; 
+    } 
+    a{
+        text-decoration: none;
+        color: black;
+    }   
+}
