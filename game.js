@@ -1,4 +1,3 @@
-
 const ball = document.getElementById("ball");
 const grid = document.querySelector(".grid");
 var platform = document.getElementById("platform");
@@ -7,7 +6,10 @@ var blocks = Array.from(document.querySelectorAll(".grid div"));
 
 var ballDirectionY = 1 ;
 var ballDirectionX = 1
-
+var phrase1 = "You won";
+var phrase2 = "You loose";
+var phrase = document.getElementById("phrase");
+var score1 = document.getElementById("score");
 
 // moving the ball
 function moveBall(){
@@ -30,14 +32,13 @@ function changeDirection(){
         ballDirectionX = -ballDirectionX
     }
 }
-
+var score = 0;
 // Removing blocks with ball and bouncing ball back
-function remove(){
+ function remove(){ 
     blocks.forEach((block)=>{
         var blockPosition = block.getBoundingClientRect();
         var ballPosition = ball.getBoundingClientRect();
         var removedBlock = block.classList.contains("remove");
-
 
         if(blockPosition.left < ballPosition.right && blockPosition.right > ballPosition.left && blockPosition.top < ballPosition.bottom && blockPosition.bottom > ballPosition.bottom && !removedBlock) {
             block.style.visibility = "hidden";
@@ -46,6 +47,10 @@ function remove(){
         }else{
             console.log("nothing")
         }
+        block.remove=()=>{
+            score++;
+        }
+        score1.innerHTML=score;
     })
 }
 
@@ -135,6 +140,8 @@ function touchMove(e) {
      }else{
          console.log("nothing")
      }
+     phrase2="You loose";
+     phrase.innerHTML=phrase2
  }
 
 
@@ -148,3 +155,6 @@ function start(){
 }
 
 const interval = setInterval(start, 40)
+
+var audio = new Audio("./assets/background sound.mp3")
+audio.play()

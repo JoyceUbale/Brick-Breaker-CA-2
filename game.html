@@ -1,82 +1,92 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BRICKS BREAKER</title>
-    <link rel="stylesheet" href="game.css">
-</head>
-<body>
-    <div class="grid" id="grid">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div class="hide"></div>
-        <div class="hide"></div>
-        <div class="hide"></div>
-        <div class="hide"></div>
-        <div class="hide"></div>
-        <div class="hide"></div>
-        <div class="hide"></div>
-        <div class="hide"></div>
-        <div class="hide"></div>
-        <div class="hide"></div>
-        <div class="hide"></div>
-        <div class="hide"></div>
-        <div class="hide"></div>
-        <div class="hide"></div>
-        <div class="hide"></div>
-        <div class="hide"></div>
-    </div>
-    <div class="box" id="box">
-        <div class="ball" id="ball"></div>
-        <div class="platform" id="platform"></div>
-    </div>
-</body>
-</html>
-<script src="game.js"></script>
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>BRICKS BREAKER</title>
+     <link rel="stylesheet" href="game.css">
+ </head>
+ <body>
+     <div class="grid" id="grid">
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div class="hide"></div>
+         <div class="hide"></div>
+         <div class="hide"></div>
+         <div class="hide"></div>
+         <div class="hide"></div>
+         <div class="hide"></div>
+         <div class="hide"></div>
+         <div class="hide"></div>
+         <div class="hide"></div>
+         <div class="hide"></div>
+         <div class="hide"></div>
+         <div class="hide"></div>
+         <div class="hide"></div>
+         <div class="hide"></div>
+         <div class="hide"></div>
+         <div class="hide"></div>
+     </div>
+     <div class="box" id="box">
+         <div class="ball" id="ball"></div>
+         <div class="platform" id="platform"></div>
+     </div>
+     <div id="result">
+         <h1 id="win">Game Over</h1>
+      <div class="Restart">
+         <span id="phrase"></span>
+         <span id="score"></span>
+         <button id="btn" onclick="location.reload()">Restart</button>
+      </div>
+     </div>
+     <!-- Add this to your HTML file -->
+
+ </body>
+ </html>
+ <script src="game.js"></script>
