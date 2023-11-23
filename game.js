@@ -50,25 +50,25 @@ function remove(){
 }
 
 // control the paddle with mouse
-// window.addEventListener("mousemove", movePlatform)
+window.addEventListener("mousemove", movePlatform)
 
-//  function movePlatform(e){
-//      mousePosition ={
-//          x: e.clientX,
-//          y: e.clientY
-//      }
-//      if(mousePosition.x < innerWidth - 80){
-//         platform.style.left = (mousePosition.x + 0) + "px"
-//      }else{
-//          console.log("go inside")
-//      }
-//  }
-
-
+ function movePlatform(e){
+     mousePosition ={
+         x: e.clientX,
+         y: e.clientY
+     }
+     if(mousePosition.x < innerWidth - 80){
+        platform.style.left = (mousePosition.x + 0) + "px"
+     }else{
+         console.log("go inside")
+     }
+ }
 
 
-// Assuming 'platform' is the element you want to move
-var platform = document.getElementById('platform');
+
+
+// // Assuming 'platform' is the element you want to move
+// var platform = document.getElementById('platform');
 
 // Store initial touch position
 var initialTouchX = 0;

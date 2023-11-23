@@ -102,12 +102,16 @@ body{
         width: 150px;
         background-color: rgba(9, 23, 147, 1);
         box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.1);
-        position: fixed;
+        position: absolute;
+        margin-bottom: 550px;
     }
     .box{
         position: fixed;
         top: 90%;
         left: 45%;
     } 
+    .hide{
+        display: none;
+    }
 }
     
