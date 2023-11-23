@@ -68,7 +68,7 @@ function remove(){
 
 
 // Assuming 'platform' is the element you want to move
-var platform = document.getElementById('yourPlatformElementId');
+var platform = document.getElementById('platform');
 
 // Store initial touch position
 var initialTouchX = 0;
