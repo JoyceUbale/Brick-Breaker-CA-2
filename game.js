@@ -50,19 +50,67 @@ function remove(){
 }
 
 // control the paddle with mouse
-window.addEventListener("mousemove", movePlatform)
+// window.addEventListener("mousemove", movePlatform)
 
- function movePlatform(e){
-     mousePosition ={
-         x: e.clientX,
-         y: e.clientY
-     }
-     if(mousePosition.x < innerWidth - 80){
-        platform.style.left = (mousePosition.x + 0) + "px"
-     }else{
-         console.log("go inside")
-     }
- }
+//  function movePlatform(e){
+//      mousePosition ={
+//          x: e.clientX,
+//          y: e.clientY
+//      }
+//      if(mousePosition.x < innerWidth - 80){
+//         platform.style.left = (mousePosition.x + 0) + "px"
+//      }else{
+//          console.log("go inside")
+//      }
+//  }
+
+
+
+
+// Assuming 'platform' is the element you want to move
+var platform = document.getElementById('yourPlatformElementId');
+
+// Store initial touch position
+var initialTouchX = 0;
+
+// Add event listeners for mouse and touch events
+window.addEventListener("mousemove", movePlatform);
+platform.addEventListener("touchstart", touchStart);
+platform.addEventListener("touchmove", touchMove);
+
+function movePlatform(e) {
+    mousePosition = {
+        x: e.clientX,
+        y: e.clientY
+    }
+    if (mousePosition.x < window.innerWidth - 80) {
+        platform.style.left = (mousePosition.x + 0) + "px";
+    } else {
+        console.log("go inside");
+    }
+}
+
+function touchStart(e) {
+    initialTouchX = e.touches[0].clientX;
+}
+
+function touchMove(e) {
+    e.preventDefault(); // Prevent scrolling on touch devices
+    var touchX = e.touches[0].clientX;
+    var deltaX = touchX - initialTouchX;
+
+    // Update initial touch position for the next move event
+    initialTouchX = touchX;
+
+    // Update platform position based on touch movement
+    var newLeft = parseInt(platform.style.left, 10) + deltaX;
+    
+    // Make sure the platform stays within the window bounds
+    if (newLeft >= 0 && newLeft <= window.innerWidth - 80) {
+        platform.style.left = newLeft + "px";
+    }
+}
+
 
 
  // ball bouce back after hitting the paddle
