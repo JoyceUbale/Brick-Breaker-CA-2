@@ -7,9 +7,10 @@ var blocks = Array.from(document.querySelectorAll(".grid div"));
 var ballDirectionY = 1 ;
 var ballDirectionX = 1
 var phrase1 = "You won";
-var phrase2 = "You loose";
+var phrase2 = ["you loose","got defeated","failed"," was unsuccessful"];
 var phrase = document.getElementById("phrase");
 var score1 = document.getElementById("score");
+var score = 0;
 
 // moving the ball
 function moveBall(){
@@ -32,7 +33,7 @@ function changeDirection(){
         ballDirectionX = -ballDirectionX
     }
 }
-var score = 0;
+
 // Removing blocks with ball and bouncing ball back
  function remove(){ 
     blocks.forEach((block)=>{
@@ -43,14 +44,13 @@ var score = 0;
         if(blockPosition.left < ballPosition.right && blockPosition.right > ballPosition.left && blockPosition.top < ballPosition.bottom && blockPosition.bottom > ballPosition.bottom && !removedBlock) {
             block.style.visibility = "hidden";
             block.classList.add("remove");
-            ballDirectionY = -ballDirectionY
+            ballDirectionY = -ballDirectionY;
+            score++;
         }else{
             console.log("nothing")
         }
-        block.remove=()=>{
-            score++;
-        }
-        score1.innerHTML=score;
+       
+        score1.innerHTML="SCORE: " + score;
     })
 }
 
@@ -140,8 +140,9 @@ function touchMove(e) {
      }else{
          console.log("nothing")
      }
-     phrase2="You loose";
-     phrase.innerHTML=phrase2
+     const nick = localStorage.getItem("Nickname")
+     var random = phrase2[Math.floor(Math.random()* phrase2.length)]
+     phrase.innerHTML= nick + " " + random; 
  }
 
 
@@ -158,3 +159,10 @@ const interval = setInterval(start, 40)
 
 var audio = new Audio("./assets/background sound.mp3")
 audio.play()
+
+// to clear the old Nickname and put new name
+const restart = document.getElementById("btn");
+restart.onclick =()=>{
+    location.href="./player.html"
+    localStorage.clear();
+}

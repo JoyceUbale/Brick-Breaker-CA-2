@@ -197,6 +197,7 @@ a{
         padding: 10px 0px 0px 0px;
         font-family: 'Inknut Antiqua', serif;
         font-size: 24px;
+        z-index: 999;
     }
     a{
         text-decoration: none;
