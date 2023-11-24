@@ -121,7 +121,7 @@ body{
 /* instructions */
 #inst{
     font-family: 'Inknut Antiqua', serif;
-    font-size: 18px;
+    font-size: 16px;
     color: white;
     margin-left: 10px;
 }
@@ -156,6 +156,3 @@ a{
     margin: 0px 0px 0px 60px;
 }
 }
-/* @media only screen and (max-width: 340px){
-
-} */
