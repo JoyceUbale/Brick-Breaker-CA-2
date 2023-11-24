@@ -18,4 +18,4 @@ Iteration 4.6: game over funtion.
 Iteration 4.7: to clear the old Nickname and put new name.
 REFERENCE: 
 https://www.pluralsight.com/blog/film-games/what-makes-a-great-game-the-key-elements-of-successful-games
-https://www.upwork.com/resources/create-your-own-video-game
+[https://www.upwork.com/resources/create-your-own-video-game](https://www.freecodecamp.org/news/how-to-code-a-simple-game/)https://www.freecodecamp.org/news/how-to-code-a-simple-game/
