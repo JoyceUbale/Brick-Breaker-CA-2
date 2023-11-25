@@ -42,7 +42,8 @@ body{
 #result{
     height: 400px;
     width: 80%;
-    background-color: rgb(56, 56, 56);
+    /* background-color: rgb(56, 56, 56); */
+    border: 10px solid rgb(251, 1, 243);
     padding: 30px;
     border-radius: 20px;
     font-size: 50px;
